@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, SignInButton, UserButton, useAuth, useUser } from "@clerk/clerk-react";
 function App() {
-  const { user } = useUser();
+  const { user} = useUser();
   if(user){
     console.log(user);
     console.log(user.id);
@@ -9,6 +9,9 @@ function App() {
     console.log("user not ");
   }
 
+  // const getToken =  async () => {
+
+  // }
 
 
   return (
