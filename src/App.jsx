@@ -1,10 +1,16 @@
 import { SignedIn, SignedOut, SignInButton, UserButton, useAuth, useUser } from "@clerk/clerk-react";
 function App() {
-  const {user} = useUser();
-  console.log(user)
+  const { user } = useUser();
+  if(user){
+    console.log(user);
+    console.log(user.id);
+  }
+  else{
+    console.log("user not ");
+  }
 
 
-  
+
   return (
     <div className="App">
       <header>
