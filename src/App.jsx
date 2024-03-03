@@ -29,9 +29,7 @@ function App() {
         <SignedOut >
           <SignInButton children="Google akkaunt orqali royxattan otish" />
         </SignedOut>
-        <SignedIn appearance={{
-          baseTheme: dark
-        }}>
+        <SignedIn>
           <UserButton />
         </SignedIn>
       </header>
