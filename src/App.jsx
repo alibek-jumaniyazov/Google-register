@@ -1,6 +1,4 @@
 import { SignedIn, SignedOut, SignInButton, UserButton, useAuth, useUser } from "@clerk/clerk-react";
-import { dark } from "@clerk/themes";
-import axios from "axios";
 function App() {
   const { user } = useUser();
   if (user) {
